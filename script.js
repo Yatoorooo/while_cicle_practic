@@ -48,17 +48,20 @@ if (number6 > 1) {
   console.log(`Число ${number6} ${number6Boll ? "є" : "не є"} простим `);
 }
 // ====================================
-let number7 = 12;
+let number7 = 81; 
 
-let defoult = 1;
-let degree = 0;
+let powerOfThree = 1;
+let number7Boll = false;
 
-while (defoult < number7) {
-  if (defoult === number7) {
-    console.log(`${number7} можна отримати зведенням 3 до ступеня ${degree}`);
-  } else {
-    console.log(`${number7} не можно отримати шляхом зведення 3 до ступеня`);
-  }
-  defoult *= 3;
-  degree++;
+for (let i = 1; powerOfThree <= number7; i++) {
+    if (powerOfThree === number7) {
+      number7Boll = true;
+        break;
+    }
+    powerOfThree *= 3;
 }
+
+if (number7Boll) {
+    console.log(`${number7}  можна отримати шляхом зведення числа 3 у деякий ступінь.`);
+}
+
